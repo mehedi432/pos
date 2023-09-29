@@ -7,6 +7,7 @@ frappe.ui.form.on("Sales", {
 
 frappe.ui.form.on("Item", {
     quantity: function(frm) {
+        frappe.msgprint("Working")
         // Your barcode generation logic goes here
         var amountValue = generateAmount(frm.doc.quantity, frm.doc.product_price);
         
@@ -14,6 +15,7 @@ frappe.ui.form.on("Item", {
         frm.set_value('amount', amountValue);
     }
 });
+
 
 function generateAmount(productQuantity, productPrice) {
     // Implement your barcode generation logic here.
