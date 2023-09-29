@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:invoice-{DD}-{MM}-{YY}-{customer_name}-#####",
+ "autoname": "format:invoice-{DD}-{MM}-{YY}-{customer_name}-{#####}",
  "creation": "2023-08-25 12:58:21.240098",
  "default_view": "List",
  "doctype": "DocType",
@@ -102,7 +102,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-29 16:57:19.906313",
+ "modified": "2023-09-29 20:14:27.418771",
  "modified_by": "Administrator",
  "module": "Pos",
  "name": "Sales",

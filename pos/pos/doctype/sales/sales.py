@@ -19,4 +19,3 @@ class Sales(Document):
 			product.save()
 
 		self.total_amount = total_amount - self.discount
-		print(self.total_amount)
