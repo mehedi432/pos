@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{product_title}-{#####} ",
+ "creation": "2023-08-25 11:53:37.683928",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_title",
+  "column_break_rmfp",
+  "category",
+  "column_break_5fbv",
+  "supplier",
+  "column_break_jjgo",
+  "inhouse_date",
+  "section_break_zmaw",
+  "image",
+  "column_break_1bhy",
+  "quantity",
+  "column_break_fepz",
+  "purchase_price",
+  "column_break_omvp",
+  "selling_price",
+  "section_break_5k9i",
+  "warrenty",
+  "column_break_cvj1",
+  "barcode"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_title",
+   "fieldtype": "Data",
+   "label": "Product Title"
+  },
+  {
+   "fieldname": "column_break_rmfp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "Category"
+  },
+  {
+   "fieldname": "column_break_5fbv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_jjgo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inhouse_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_zmaw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_1bhy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_fepz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purchase_price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Purchase Price"
+  },
+  {
+   "fieldname": "column_break_omvp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "selling_price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Selling Price"
+  },
+  {
+   "fieldname": "section_break_5k9i",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "warrenty",
+   "fieldtype": "Select",
+   "label": "Warrenty",
+   "options": "One Year\nTwo Year\nThree Year\nLife Time\nNo Warrenty"
+  },
+  {
+   "fieldname": "column_break_cvj1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-27 20:54:42.859590",
+ "modified_by": "Administrator",
+ "module": "Pos",
+ "name": "Product",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Pos User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

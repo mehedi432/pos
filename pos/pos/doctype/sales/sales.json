@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:invoice-{DD}-{MM}-{YY}-{customer_name}-#####",
+ "creation": "2023-08-25 12:58:21.240098",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "invoice_date",
+  "column_break_bqip",
+  "customer",
+  "column_break_up66",
+  "customer_name",
+  "section_break_plwg",
+  "item",
+  "section_break_yh3r",
+  "column_break_7wkk",
+  "column_break_tvq2",
+  "column_break_2nsg",
+  "discount",
+  "total_amount",
+  "final_tab",
+  "markdown_editor_xsyg"
+ ],
+ "fields": [
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_bqip",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "section_break_plwg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Table",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "section_break_yh3r",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "discount",
+   "fieldtype": "Float",
+   "label": "Discount",
+   "non_negative": 1,
+   "precision": "0"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "column_break_7wkk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "column_break_up66",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tvq2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_2nsg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "final_tab",
+   "fieldtype": "Tab Break",
+   "label": "Final"
+  },
+  {
+   "fieldname": "markdown_editor_xsyg",
+   "fieldtype": "Markdown Editor"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-29 16:57:19.906313",
+ "modified_by": "Administrator",
+ "module": "Pos",
+ "name": "Sales",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Pos User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
