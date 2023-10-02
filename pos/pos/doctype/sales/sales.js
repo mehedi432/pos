@@ -2,6 +2,11 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on("Sales", {
-	
+	receive_amount: function(frm){
+        console.log(frm.doc.receive_amount)
+    }
 });
+
+
+frappe.ui.form.on("")
 
