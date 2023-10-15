@@ -1,0 +1,147 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Service-{DD}-{MM}-{YY}-{#####}",
+ "creation": "2023-10-15 16:18:48.553182",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "column_break_j7iq",
+  "brand",
+  "column_break_qhaj",
+  "model",
+  "section_break_cl54",
+  "total_amount",
+  "column_break_sbi8",
+  "paid_amount",
+  "column_break_42qh",
+  "due_amount",
+  "section_break_6dip",
+  "receive_date",
+  "column_break_mdnn",
+  "deliver_date",
+  "column_break_dtjz",
+  "status",
+  "section_break_q2ni",
+  "product_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_j7iq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand"
+  },
+  {
+   "fieldname": "column_break_qhaj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "section_break_cl54",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Int",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "column_break_sbi8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Int",
+   "label": "Paid Amount"
+  },
+  {
+   "fieldname": "column_break_42qh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "due_amount",
+   "fieldtype": "Int",
+   "label": "Due Amount"
+  },
+  {
+   "fieldname": "section_break_6dip",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "receive_date",
+   "fieldtype": "Datetime",
+   "label": "Receive Date"
+  },
+  {
+   "fieldname": "column_break_mdnn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deliver_date",
+   "fieldtype": "Datetime",
+   "label": "Deliver Date"
+  },
+  {
+   "fieldname": "section_break_q2ni",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_description",
+   "fieldtype": "Text",
+   "label": "Product Description"
+  },
+  {
+   "fieldname": "column_break_dtjz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Received\nDelivered\nWorking"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-15 16:52:53.668259",
+ "modified_by": "Administrator",
+ "module": "Pos",
+ "name": "Service",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

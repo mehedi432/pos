@@ -19,5 +19,4 @@ class Sales(Document):
 			product.save()
 
 		self.total_due = total_amount - self.receive_amount
-
 		self.total_amount = total_amount - self.discount
