@@ -31,7 +31,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-26 10:29:37.125531",
+ "modified": "2023-10-15 16:52:38.803183",
  "modified_by": "Administrator",
  "module": "Pos",
  "name": "Customer",
@@ -63,6 +63,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
