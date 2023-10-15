@@ -8,5 +8,9 @@ frappe.ui.form.on("Sales", {
 });
 
 
-frappe.ui.form.on("")
+frappe.ui.form.on("Item", {
+    quantity: function(cdt, cdn, frm){
+        print(cdt, cdn)
+    }
+})
 
