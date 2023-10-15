@@ -20,3 +20,9 @@ class Sales(Document):
 
 		self.total_due = total_amount - self.receive_amount
 		self.total_amount = total_amount - self.discount
+
+		customer = frappe.get_doc("Customer", self.customer)
+		if customer.total_purchase != 0 or customer.total_purchase == 0:
+			customer.total_purchase += self.total_amount
+			customer.total_due += self.total_due
+			customer.save()

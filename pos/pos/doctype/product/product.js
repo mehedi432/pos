@@ -10,6 +10,7 @@ frappe.ui.form.on('Product', {
         // Set the value of the barcode field
         frm.set_value('barcode', barcodeValue);
     }
+
 });
 
 function generateBarcode(productTitle) {

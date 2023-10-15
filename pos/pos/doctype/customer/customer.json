@@ -10,7 +10,11 @@
  "field_order": [
   "customer_name",
   "column_break_49lh",
-  "mobile_number"
+  "mobile_number",
+  "section_break_yxwk",
+  "total_purchase",
+  "column_break_f7hp",
+  "total_due"
  ],
  "fields": [
   {
@@ -27,11 +31,31 @@
    "fieldtype": "Data",
    "label": "Mobile Number",
    "unique": 1
+  },
+  {
+   "fieldname": "section_break_yxwk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_purchase",
+   "fieldtype": "Int",
+   "label": "Total Purchase"
+  },
+  {
+   "fieldname": "column_break_f7hp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "o",
+   "fieldname": "total_due",
+   "fieldtype": "Int",
+   "label": "Total Due"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-15 16:52:38.803183",
+ "modified": "2023-10-15 17:14:35.606862",
  "modified_by": "Administrator",
  "module": "Pos",
  "name": "Customer",
