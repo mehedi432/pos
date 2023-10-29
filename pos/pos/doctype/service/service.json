@@ -26,6 +26,8 @@
   "column_break_dtjz",
   "status",
   "section_break_q2ni",
+  "barcode",
+  "column_break_ckvt",
   "product_description"
  ],
  "fields": [
@@ -116,11 +118,21 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Received\nDelivered\nWorking"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "column_break_ckvt",
+   "fieldtype": "Column Break"
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-15 16:52:53.668259",
+ "modified": "2023-10-30 04:36:03.939835",
  "modified_by": "Administrator",
  "module": "Pos",
  "name": "Service",

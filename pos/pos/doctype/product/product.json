@@ -125,9 +125,10 @@
    "label": "Barcode"
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-15 12:06:32.779026",
+ "modified": "2023-10-24 22:41:31.969101",
  "modified_by": "Administrator",
  "module": "Pos",
  "name": "Product",
