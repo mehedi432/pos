@@ -18,5 +18,20 @@ class Sales(Document):
 			product.quantity -= item.quantity
 			product.save()
 
-		self.total_due = total_amount - self.receive_amount
+		self.total_due    = total_amount - self.receive_amount
 		self.total_amount = total_amount - self.discount
+
+		customer         = frappe.get_doc('Customer', self.customer)
+		
+		# Get the previous values
+		previous_receive = customer.total_receive
+		previous_dues    = customer.total_due
+
+		if customer.total_receive == 0 or customer.total_due == 0:
+			customer.total_receive = self.receive_amount
+			customer.total_due     = self.total_due
+		else:
+			customer.total_receive = previous_receive + self.receive_amount
+			customer.total_due     = previous_dues + self.total_due
+		
+		customer.save()
