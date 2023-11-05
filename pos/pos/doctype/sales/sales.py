@@ -15,6 +15,7 @@ class Sales(Document):
 			total_amount += item.amount
 
 			product = frappe.get_doc('Product', item.product_name)
+			# Decrease the product quantity from Product DocType
 			product.quantity -= item.quantity
 			product.save()
 
@@ -23,15 +24,18 @@ class Sales(Document):
 
 		customer         = frappe.get_doc('Customer', self.customer)
 		
-		# Get the previous values
+		# Get the previous values and save it to Customer DocType
 		previous_receive = customer.total_receive
 		previous_dues    = customer.total_due
+		previous_amount  = customer.total_amount
 
 		if customer.total_receive == 0 or customer.total_due == 0:
 			customer.total_receive = self.receive_amount
 			customer.total_due     = self.total_due
+			customer.toal_amount   = self.total_amount
 		else:
 			customer.total_receive = previous_receive + self.receive_amount
 			customer.total_due     = previous_dues + self.total_due
-		
+			customer.total_amount  = previous_amount + self.total_amount
+
 		customer.save()

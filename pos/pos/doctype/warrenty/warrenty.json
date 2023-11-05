@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-05 16:46:11.100356",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product",
+  "column_break_c0tg",
+  "supplier",
+  "column_break_va25",
+  "customer_number",
+  "column_break_2mty",
+  "customer_name",
+  "section_break_lb5o",
+  "purchase_date",
+  "column_break_dxdh",
+  "receive_date",
+  "column_break_yebz",
+  "quantity",
+  "column_break_8noc",
+  "status",
+  "section_break_00fy",
+  "problem"
+ ],
+ "fields": [
+  {
+   "fieldname": "product",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "column_break_yebz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_c0tg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "product.",
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Product Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "section_break_lb5o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "label": "Purchase Date"
+  },
+  {
+   "fieldname": "column_break_dxdh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "receive_date",
+   "fieldtype": "Date",
+   "label": "Warranty Claim Date"
+  },
+  {
+   "fieldname": "column_break_va25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer_number.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "customer_number",
+   "fieldtype": "Link",
+   "label": "Customer Number",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_2mty",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_00fy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "problem",
+   "fieldtype": "Text",
+   "label": "Problem"
+  },
+  {
+   "fieldname": "column_break_8noc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Service Center\nComplete\nPending\nDelivered"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-05 17:14:32.583109",
+ "modified_by": "Administrator",
+ "module": "Pos",
+ "name": "Warrenty",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
